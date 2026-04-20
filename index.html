@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta charset="utf-8">
+<title>PS3LB</title>
+
+<!-- 🚀 Preload الصور -->
+<link rel="preload" as="image" href="2.png">
+<link rel="preload" as="image" href="3.png">
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* الصفحات */
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#home {
+    display: block;
+}
+
+/* الخلفيات */
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* الأزرار */
+.btn {
+    position: absolute;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ===== الصفحة الرئيسية ===== */
+#btn1 { top: 63%; left: 30%; font-size: 22px; padding: 10px 40px; }
+#btn2 { top: 73%; left: 30%; font-size: 22px; padding: 10px 40px; }
+
+/* ===== الصفحة 2 ===== */
+#p2_b1 { top: 47%; left: 34%; font-size: 20px; padding: 10px 50px; }
+#p2_b2 { top: 61%; left: 34%; font-size: 20px; padding: 10px 50px; }
+#p2_b3 { top: 74%; left: 34%; font-size: 20px; padding: 10px 50px; }
+
+#p2_b4 { top: 47%; left: 80%; font-size: 20px; padding: 10px 40px; }
+#p2_b5 { top: 61%; left: 69%; font-size: 20px; padding: 10px 30px; }
+#p2_b6 { top: 61%; left: 80%; font-size: 20px; padding: 10px 30px; }
+#p2_b7 { top: 74%; left: 79%; font-size: 20px; padding: 10px 50px; }
+
+#p2_back { top: 85%; left: 04%; font-size: 24px; padding: 10px 30px; }
+
+/* ===== الصفحة 3 ===== */
+#p3_b1 { top: 47%; left: 34%; font-size: 20px; padding: 10px 50px; }
+#p3_b2 { top: 61%; left: 34%; font-size: 20px; padding: 10px 50px; }
+#p3_b3 { top: 74%; left: 34%; font-size: 20px; padding: 10px 50px; }
+
+#p3_b4 { top: 47%; left: 80%; font-size: 20px; padding: 10px 40px; }
+#p3_b5 { top: 61%; left: 69%; font-size: 20px; padding: 10px 30px; }
+#p3_b6 { top: 61%; left: 80%; font-size: 20px; padding: 10px 30px; }
+#p3_b7 { top: 74%; left: 79%; font-size: 20px; padding: 10px 50px; }
+
+#p3_back { top: 85%; left: 04%; font-size: 24px; padding: 10px 30px; }
+</style>
+
+<script>
+// 🚀 تحميل الصور مسبقًا (مهم جدًا للـ PS3)
+function preloadImages() {
+    var img1 = new Image();
+    var img2 = new Image();
+
+    img1.src = "2.png";
+    img2.src = "3.png";
+}
+
+// 🎮 التنقل السريع
+function showPage(page) {
+    document.getElementById("home").style.display = "none";
+    document.getElementById("page2").style.display = "none";
+    document.getElementById("page3").style.display = "none";
+
+    document.getElementById(page).style.display = "block";
+}
+
+window.onload = preloadImages;
+</script>
+
+</head>
+
+<body>
+
+<!-- الصفحة الرئيسية -->
+<div id="home" class="page">
+    <img src="1.png" class="bg">
+
+    <button id="btn1" class="btn" onclick="showPage('page2')">Click Here</button>
+    <button id="btn2" class="btn" onclick="showPage('page3')">Click Here</button>
+</div>
+
+<!-- الصفحة 2 -->
+<div id="page2" class="page">
+    <img src="2.png" class="bg">
+
+    <button id="p2_b1" class="btn" onclick="window.location='https://www.mediafire.com/file/cdjwdoo37ntwl4f/WIKISTORE-H.pkg/file'">DOWNLOAD</button>
+    <button id="p2_b2" class="btn" onclick="window.location='https://www.mediafire.com/file/w1iuazbam3wnpsr/ZUKOSTORE-H.pkg/file'">DOWNLOAD</button>
+    <button id="p2_b3" class="btn" onclick="window.location='https://www.mediafire.com/file/ru2blnjw1dcmpat/FIX_STORES_HEN_4.93.pkg/file'">DOWNLOAD</button>
+
+    <button id="p2_b4" class="btn" onclick="window.location='https://www.mediafire.com/file/yl8pqtrky05p86c/VIDEOSTORE-H.pkg/file'">DOWNLOAD</button>
+    <button id="p2_b5" class="btn" onclick="window.location='https://www.mediafire.com/file/3tslldwwqpxjeac/PKGI-H.pkg/file'">DOWNLOAD</button>
+    <button id="p2_b6" class="btn" onclick="window.location='https://www.mediafire.com/file/qyzxhetqjd8jam9/PKGI-FIX-H.pkg/file'">FIX</button>
+    <button id="p2_b7" class="btn" onclick="window.location='https://www.mediafire.com/file/g862znllq6zcvco/Licencias.pkg/file'">DOWNLOAD</button>
+
+    <button id="p2_back" class="btn" onclick="showPage('home')">Back</button>
+</div>
+
+<!-- الصفحة 3 -->
+<div id="page3" class="page">
+    <img src="3.png" class="bg">
+
+    <button id="p3_b1" class="btn" onclick="window.location='https://www.mediafire.com/file/8iw2mt62fjpf640/WIKISTORE-C.pkg/file'">DOWNLOAD</button>
+    <button id="p3_b2" class="btn" onclick="window.location='https://www.mediafire.com/file/ol5mw6gzy5j7wrn/ZUKOSTORE-C.pkg/file'">DOWNLOAD</button>
+    <button id="p3_b3" class="btn" onclick="window.location='https://www.mediafire.com/file/vfpopfbzfrzi6nr/FIX_STORES_CFW_4.93.pkg/file'">DOWNLOAD</button>
+
+    <button id="p3_b4" class="btn" onclick="window.location='https://www.mediafire.com/file/cqmtpox2bng4k5t/VIDEOSTORE-C.pkg/file'">DOWNLOAD</button>
+    <button id="p3_b5" class="btn" onclick="window.location='https://www.mediafire.com/file/qvun0cpcxzs30uh/PKGI-C.pkg/file'">DOWNLOAD</button>
+    <button id="p3_b6" class="btn" onclick="window.location='https://www.mediafire.com/file/g3gqsynvwkm3ixy/PKGI-FIX-C.pkg/file'">FIX</button>
+    <button id="p3_b7" class="btn" onclick="window.location='https://www.mediafire.com/file/g862znllq6zcvco/Licencias.pkg/file'">DOWNLOAD</button>
+
+    <button id="p3_back" class="btn" onclick="showPage('home')">Back</button>
+</div>
+
+</body>
+</html>
